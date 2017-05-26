@@ -10,8 +10,8 @@ public class SorterMain
 
         System.out.println(input);
 
-        SelectionSort selectionSorter = new SelectionSort(input);
-        input = selectionSorter.getSortedList();
+        InsertionSort insertionSort = new InsertionSort(input);
+        input = insertionSort.getSortedList();
         
         System.out.println(input);
     }

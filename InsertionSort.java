@@ -1,10 +1,9 @@
 import java.util.ArrayList;
 
-public class SelectionSort implements Sorter
+public class InsertionSort implements Sorter
 {
     private ArrayList<Integer> list = new ArrayList<Integer>();
-
-    public SelectionSort(ArrayList<Integer> input)
+    public InsertionSort(ArrayList<Integer> input)
     {
         list = input;
     }
@@ -21,24 +20,16 @@ public class SelectionSort implements Sorter
         ArrayList<Integer> sortedList = new ArrayList<Integer>();
         sortedList = unsortedList;
 
-        int i = sortedList.size()-1;
-        int max;
-        int maxIndex = -1;
-        while(i > 0)
+        for(int i = 1 ; i < sortedList.size() ; i++)
         {
-            max = 0;
-            for(int j = 0 ; j < i ; j++)
+            int cur = sortedList.get(i);
+            int j = i-1;
+            while(j >= 0 && sortedList.get(j) > cur)
             {
-                if(sortedList.get(j) > max)
-                {
-                    max = sortedList.get(j);
-                    maxIndex = j;
-                }
+                sortedList.set(j+1, sortedList.get(j));
+                j--;
             }
-            int temp = sortedList.get(i);
-            sortedList.set(i, max);
-            sortedList.set(maxIndex, temp);
-            i--;
+            sortedList.set(j+1, cur);
         }
 
         return sortedList;
