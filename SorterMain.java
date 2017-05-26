@@ -10,8 +10,8 @@ public class SorterMain
 
         System.out.println(input);
 
-        BubbleSort bubbleSorter = new BubbleSort(input);
-        input = bubbleSorter.getSortedList();
+        SelectionSort selectionSorter = new SelectionSort(input);
+        input = selectionSorter.getSortedList();
         
         System.out.println(input);
     }
