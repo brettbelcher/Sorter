@@ -2,5 +2,6 @@
 A Consortium of Sorting Algorithms.
 
 Current Algorithms:
-Bubble Sort
-Selection Sort
+Bubble Sort\n
+Selection Sort\n
+Insertion Sort
