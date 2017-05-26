@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class BubbleSort
+public class BubbleSort implements Sorter
 {
     private ArrayList<Integer> list= new ArrayList<Integer>();
 
@@ -21,7 +21,8 @@ public class BubbleSort
         ArrayList<Integer> sortedList = new ArrayList<Integer>();
         sortedList = unsortedList;
 
-        for(int i = 0 ; i < sortedList.size()-1 ; i++)
+        int i = sortedList.size();
+        while(i > 0)
         {
             for(int j = 0 ; j < sortedList.size()-1 ; j++)
             {
@@ -32,6 +33,8 @@ public class BubbleSort
                     sortedList.set(j+1, temp);
                 }
             }
+
+            i--;
         }
 
         return sortedList;
