@@ -1,2 +1,5 @@
 # Sorter
-A consortium of sorting algorithms
+A Consortium of Sorting Algorithms.
+
+Current Algorithms:
+Bubble Sort
