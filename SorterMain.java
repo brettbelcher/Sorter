@@ -10,8 +10,8 @@ public class SorterMain
 
         System.out.println(input);
 
-        InsertionSort insertionSort = new InsertionSort(input);
-        input = insertionSort.getSortedList();
+        QuickSort quickSort = new QuickSort(input);
+        input = quickSort.getSortedList();
         
         System.out.println(input);
     }
