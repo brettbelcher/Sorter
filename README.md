@@ -5,3 +5,4 @@ Current Algorithms:
 Bubble Sort
 Selection Sort
 Insertion Sort
+QuickSort
